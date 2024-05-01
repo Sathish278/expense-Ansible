@@ -4,10 +4,11 @@
   become: yes
   vars:
     login_host: db.sathishreddy.online
-  vars_prompt:
-  - name: mysql_root_password
-    prompt: Please enter root password
-    private: no 
+    mysql_root_password: ExpenseApp@1
+  # vars_prompt:
+  # - name: mysql_root_password
+  #   prompt: Please enter root password
+  #   private: no 
   tasks:
   - name: inatalling mysql server
     ansible.builtin.dnf:
