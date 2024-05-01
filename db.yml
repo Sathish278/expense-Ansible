@@ -3,7 +3,7 @@
   hosts: db 
   become: yes
   vars:
-    login_host: db.sathishreddy.online
+    login_host: 10.1.0.39
     mysql_root_password: ExpenseApp@1
   # vars_prompt:
   # - name: mysql_root_password
